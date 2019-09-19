@@ -1,22 +1,16 @@
 
-html {
-    box-sizing: border-box;
-}
-Body {
+html body {
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     line-height: 1;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.3em;
     margin: 0 auto;
     width: 100%;
 }
 
 
-heading {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
+header {
     top: 0;
     left: 0;
     width: 100%;
@@ -28,17 +22,17 @@ heading {
     letter-spacing: 0.5em;
 }
 
-a{
-    text-decoration: none;
-}
-
 #linksbar {
+    display: flex; 
+    justify-content: flex-end
     margin-right: 3rem;
-
+    color: #fff;
+    text-decoration: none;
 }
 
 #linksbar > p {
     margin-right: 3rem;
+    color: #fff;
 }
 
 #presentation{
@@ -56,9 +50,11 @@ a{
     top: 5%;
 }
 
-p {
-    margin-top: 20px !important;
+
+p, h1, a {
+    color: #fff;
 }
+
 
 .sky-color{
     position: fixed;
@@ -84,7 +80,6 @@ p {
 
 #title{
     top: 5%;
-    margin-left: 2%;
     line-height: 2rem;
 }
 
@@ -94,7 +89,7 @@ p {
     margin-bottom: 1.6rem;
     font-weight: 500;
     text-shadow: 0 10px 30px rgba(1, 37, 83, 0.63); 
-    margin-left: 1%;
+  
 }
 
 
@@ -108,19 +103,12 @@ p {
     margin-left: 20%;
 }
 
-#porty{
-    position: absolute;
-    font-size: 4.4rem;
-    letter-spacing: 0.1em;
-    text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
-    color: #ff4d5a;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-}
+
 
 #skills, #tools, #knowledge {
     position: relative;
     margin: 3% 12% 0 10%;
+    color: #fff;
 }
 
 #flex {
@@ -144,13 +132,7 @@ li {
     margin: 10% 5% 0 12%;
 }
 
-.perfil{
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 12% 22% 0 12%;
-    line-height: 1.5em;
-    letter-spacing: 0.05;
-}
+
 
 table{
     justify-content: flex-end;
@@ -158,6 +140,7 @@ table{
     letter-spacing: 0;
     margin: 3% 22% 20% 12%;
     width: 80%;
+    color: #fff;
 }
 
 td {
@@ -190,3 +173,28 @@ img{
     line-height: 1;
 }
 
+
+.container{
+    max-width: 1500px !important;
+}
+
+
+.col {
+    justify-content: center;
+    align-content: space-around;
+}
+
+
+.about{
+    font-size: 4.4rem;
+    letter-spacing: 0.1em;
+    text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
+    color: #ff4d5a;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 50px;
+}
+
+.perfil{
+    line-height: 1.5em;
+}
