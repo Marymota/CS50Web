@@ -22,15 +22,16 @@ header {
     letter-spacing: 0.5em;
 }
 
-#linksbar {
+.linksbar {
     display: flex; 
-    justify-content: flex-end
+    flex-wrap: wrap;
     margin-right: 3rem;
     color: #fff;
     text-decoration: none;
+    margin-top: 50px;
 }
 
-#linksbar > p {
+.linksbar > p {
     margin-right: 3rem;
     color: #fff;
 }
@@ -78,12 +79,14 @@ p, h1, a {
     font-size: 1.4rem;
 }
 
-#title{
+.title{
     top: 5%;
     line-height: 2rem;
+    margin-left: 0.5rem;
 }
 
-#name{
+.name{
+    
     font-size: 7rem;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
@@ -127,9 +130,9 @@ li {
     font-weight: bold;
 }
 
-.toolsdesign{
+.titleskills{
     display: flex;
-    margin: 10% 5% 0 12%;
+    margin: 20% auto 5% auto;
 }
 
 
@@ -138,8 +141,6 @@ table{
     justify-content: flex-end;
     align-items: flex-end;
     letter-spacing: 0;
-    margin: 3% 22% 20% 12%;
-    width: 80%;
     color: #fff;
 }
 
@@ -174,9 +175,9 @@ img{
 }
 
 
-.container{
-    max-width: 1500px !important;
-}
+/**.container{
+    max-width: 100px !important;
+}**/
 
 
 .col {
@@ -192,9 +193,17 @@ img{
     color: #ff4d5a;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
-    margin-top: 50px;
+    margin-top: 100px;
+    
 }
 
 .perfil{
     line-height: 1.5em;
+    
+}
+
+.row{
+    max-width: 2000px;
+    align-items: self-end;
+    margin: 0 auto;
 }
