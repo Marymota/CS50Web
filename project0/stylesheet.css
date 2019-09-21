@@ -10,6 +10,7 @@ html body {
 }
 
 header {
+  display: inline;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,9 +23,8 @@ header {
 }
 
 .linksbar {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     justify-content: flex-end;
     color: #fff;
     text-decoration: none;
@@ -33,6 +33,15 @@ header {
 .linksbar > p {
     margin-right: 3rem;
     color: #fff;
+}
+
+.linksbar a{
+  color: #fff;
+}
+
+.linksbar a:hover{
+  color: #fff;
+  text-decoration: none;
 }
 
 #presentation{
@@ -73,11 +82,10 @@ p, h1, a {
     position: relative;
     z-index: 1000;
     color: #fff;
+    float: left;;
 }
 
-#logoimage .works{
-    font-size: 1.4rem;
-}
+
 
 .title{
     top: 5%;
@@ -162,7 +170,7 @@ th {
 }
 
 img{
-  max-width: 900px;
+  width: 100%;
 }
 
 
