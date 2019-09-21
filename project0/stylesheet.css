@@ -9,7 +9,6 @@ html body {
     width: 100%;
 }
 
-
 header {
     top: 0;
     left: 0;
@@ -23,12 +22,12 @@ header {
 }
 
 .linksbar {
-    display: flex; 
+    display: inline-flex;
     flex-wrap: wrap;
-    margin-right: 3rem;
+    align-items: flex-end;
+    justify-content: flex-end;
     color: #fff;
     text-decoration: none;
-    margin-top: 50px;
 }
 
 .linksbar > p {
@@ -63,9 +62,10 @@ p, h1, a {
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: linear-gradient( 110.8deg, rgb(2, 0, 15)40%,  rgba(1,22,56,1) 95% );
+    background-image: linear-gradient( 110.8deg, rgb(2, 0, 15)40%,  rgba(1,10,30,1) 95% );
     z-index: -200;
 }
+
 #logoimage{
     text-decoration: none;
     font-size: 1.4rem;
@@ -86,13 +86,11 @@ p, h1, a {
 }
 
 .name{
-    
     font-size: 7rem;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     font-weight: 500;
-    text-shadow: 0 10px 30px rgba(1, 37, 83, 0.63); 
-  
+    text-shadow: 0 10px 30px rgba(1, 37, 83, 0.63);
 }
 
 
@@ -100,7 +98,7 @@ p, h1, a {
 #show{
     display: flex;
     margin: auto;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     margin-top: 15%;
     margin-left: 20%;
@@ -132,7 +130,7 @@ li {
 
 .titleskills{
     display: flex;
-    margin: 20% auto 5% auto;
+    margin: 0 auto 5% auto;
 }
 
 
@@ -142,6 +140,9 @@ table{
     align-items: flex-end;
     letter-spacing: 0;
     color: #fff;
+}
+.jumbotron{
+  margin-top: 50px;
 }
 
 td {
@@ -157,15 +158,13 @@ th {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 40%;
-
-    margin: 5% 0 10% 40%;
-
+    width: 80%;
 }
 
 img{
-    width:100%;
+  max-width: 900px;
 }
+
 
 .works {
     box-sizing: border-box;
@@ -186,7 +185,7 @@ img{
 }
 
 
-.about{
+.about, .portweb, .contact{
     font-size: 4.4rem;
     letter-spacing: 0.1em;
     text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
@@ -194,16 +193,40 @@ img{
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 100px;
-    
 }
+
+
 
 .perfil{
     line-height: 1.5em;
-    
+
 }
 
 .row{
     max-width: 2000px;
-    align-items: self-end;
     margin: 0 auto;
+}
+
+
+/** Media Queries **/
+
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: 20vw;
+}
+  .about{
+    font-size: 20vw;
+  }
+  .portweb{
+  font-size: 13vw;
+}
+  .contact{
+  font-size: 15vw;
+}
+  .linksbar {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    margin: 30px auto;
+}
 }
